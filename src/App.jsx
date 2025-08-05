@@ -1,17 +1,18 @@
-import {  } from 'react'
+
 import './App.css'
-import BasicTodo from './State_Management_Techniques_and_useState_Hook/Q14'
-import AttendenceManger from './State_Management_Techniques_and_useState_Hook/Q15'
-import FetchandPrint from './React_with_APIs_and_Axios_Library/Q1'
-import FetchandShow from './React_with_APIs_and_Axios_Library/Q2'
-import FetchApiWithAxios from './React_with_APIs_and_Axios_Library/Q3'
+import Home from './Coding-Contest/Q1/Home'
+import Main from './Coding-Contest/Q1/Main'
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
 
   return (
     <>
-    <FetchApiWithAxios/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/main" element={<Main/>}/>
+    </Routes>
       
     </>
   )
